@@ -1,0 +1,30 @@
+<h1>Interpolation Example</h1>
+
+{{name}}
+<br>
+{{2+2}}
+<br>
+{{2+2+ getValue()}}
+<br>
+{{getFirstName() + getLastName()}}
+
+
+<h1>Property Binding</h1>
+<input type="text" [value]="name">
+<br>
+<img [src]="src"/>
+
+<h1>Similarities</h1>
+
+
+<input type="text" value="{{name}}">
+<br>
+<img src="{{src}}"/>
+
+<h1>Difference</h1>
+
+<img src='https://angular.io/{{imagePath}}'/>
+<br>
+
+<button disabled='{{isDisabled}}'>Click</button>
+<button [disabled]='isDisabled'>Click</button>
